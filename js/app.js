@@ -56,7 +56,6 @@ for (var ct = 0; ct < cardArr.length; ct++) {
 var rep = document.getElementsByClassName("fa fa-repeat");
 rep[0].addEventListener("click", newGame);
 var clbtn = document.getElementById("closebtn");
-window.addEventListener("click", focusPopup);
 
 function popUpP() {
 	if (event.target == document.getElementById("popup")) document.getElementById("popup").style.display = "none";
@@ -67,9 +66,10 @@ function popUpClose() {
 }
 
 function newGame() {
-    window.clearInterval(timer);
-	 flag = false;
-    window.location.reload();
+    // window.clearInterval(timer);
+	//  flag = false;
+	// window.location.reload();
+	window.location.reload();
 }
 
 function clickCard() {
